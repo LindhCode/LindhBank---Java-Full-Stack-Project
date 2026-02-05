@@ -27,7 +27,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         stg = stage;
-        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("logInPage.fxml"));
         Scene scene = new Scene(root, Color.GRAY);
         Image icon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/LindhBank.png")));
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank.CreateAccount">
+   <children>
+      <Text layoutX="268.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To create a new account, fill in your data below" wrappingWidth="263.57879638671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="username" layoutX="268.0" layoutY="223.0" prefHeight="25.0" prefWidth="253.0" />
+      <Text layoutX="268.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Text layoutX="270.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Button fx:id="createAccount" layoutX="425.0" layoutY="314.0" mnemonicParsing="false" onAction="#createAccountButton" text="Create account" />
+      <ImageView fitHeight="107.0" fitWidth="77.0" layoutX="361.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Users/axell/Pictures/LindhBank.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="password" layoutX="270.0" layoutY="276.0" prefHeight="25.0" prefWidth="253.0" />
+      <Text layoutX="472.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="or" />
+      <Button layoutX="453.0" layoutY="356.0" mnemonicParsing="false" onAction="#goToLogInPage" text="Log in" />
+   </children>
+</AnchorPane>

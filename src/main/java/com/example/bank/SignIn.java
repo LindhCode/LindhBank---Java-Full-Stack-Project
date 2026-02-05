@@ -22,6 +22,11 @@ public class SignIn {
         checkLogin();
     }
 
+    public void goToPageCreateAccount(ActionEvent e) throws IOException {
+            Main m = new Main();
+            m.changeScene("createAccountPage.fxml");
+        }
+
     private void checkLogin() throws IOException {
         Main m = new Main();
         if(username.getText().toString().equals("Axel") && password.getText().toString().equals("123")){

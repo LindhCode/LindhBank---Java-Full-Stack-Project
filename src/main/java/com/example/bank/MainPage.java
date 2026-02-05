@@ -8,7 +8,7 @@ public class MainPage {
 
     public void userLogOut(ActionEvent e) throws IOException{
         Main m = new Main();
-        m.changeScene("Main.fxml");
+        m.changeScene("logInPage.fxml");
     }
 
 
