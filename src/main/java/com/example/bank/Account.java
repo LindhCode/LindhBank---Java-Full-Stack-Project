@@ -6,7 +6,7 @@ public class Account {
     private static int accNumb = 1111;
     private static ArrayList<Account> accounts = new ArrayList<>();
 
-    String username;
+    private String username;
     String password;
     int accountNumber;
     double balance;
@@ -22,14 +22,21 @@ public class Account {
 
         accounts.add(new Account(username, password,getAccNumb(),1000.00));
         accNumb++;
+
         for(Account a: accounts){
             System.out.println(a);
         }
+
+
         //System.out.println(accounts.get(0));
     }
 
     public static int getAccNumb() {
         return accNumb;
+    }
+
+    public String getUsername(){
+        return username;
     }
 
     public static ArrayList<Account> getAccounts(){
