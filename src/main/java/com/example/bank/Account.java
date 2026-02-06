@@ -39,6 +39,10 @@ public class Account {
         return username;
     }
 
+    public String getPassword(){
+        return password;
+    }
+
     public static ArrayList<Account> getAccounts(){
         return accounts;
     }

@@ -30,7 +30,7 @@
          </font>
       </Text>
       <Button fx:id="logInButton" layoutX="334.0" layoutY="288.0" mnemonicParsing="false" onAction="#logIn" text="Log in" />
-      <Label fx:id="logInTrue" layoutX="223.0" layoutY="292.0" />
+      <Label fx:id="logInTrue" layoutX="223.0" layoutY="272.0" prefHeight="17.0" prefWidth="321.0" />
       <Text layoutX="390.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="or" wrappingWidth="19.291015625">
          <font>
             <Font name="System Italic" size="15.0" />

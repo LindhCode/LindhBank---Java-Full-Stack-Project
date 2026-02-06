@@ -8,6 +8,9 @@ import java.io.IOException;
 
 
 public class SignIn {
+    Account admin = new Account("admin","admin",0,0);
+    Main m = new Main();
+
     @FXML
     private Button logInButton;
     @FXML
@@ -23,15 +26,22 @@ public class SignIn {
     }
 
     public void goToPageCreateAccount(ActionEvent e) throws IOException {
-            Main m = new Main();
             m.changeScene("createAccountPage.fxml");
         }
 
     private void checkLogin() throws IOException {
-        Main m = new Main();
-        if(username.getText().toString().equals("Axel") && password.getText().toString().equals("123")){
+        String attemptedUsername = username.getText();
+        String attemptedPassword = password.getText();
+        boolean validLogIn = false;
+        for(Account a: Account.getAccounts()){
+            if(attemptedUsername.equals(a.getUsername()) && attemptedPassword.equals(a.getPassword())){
+                validLogIn = true;
+            }
+        }
+        if(validLogIn){
             logInTrue.setText("Welcome!");
             m.changeScene("mainPage.fxml");
+            validLogIn = false;
         }
         else if(username.getText().isEmpty() || password.getText().isEmpty()){
             logInTrue.setText("Please enter all your data");
