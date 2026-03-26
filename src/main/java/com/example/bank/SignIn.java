@@ -20,7 +20,6 @@ public class SignIn {
     @FXML
     private PasswordField password;
 
-
     public void logIn(ActionEvent e) throws IOException {
         checkLogin();
     }
